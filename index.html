@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint App</title>
+    <link rel = "stylesheet" href = "styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <canvas id="jsCanvas" class="canvas"></canvas>
+    <div class="controls">
+        <div class="controls_colors" id = "jsColors">
+            <div class="controls_color jsColor" style="background-color: #ADB2D4;"></div>
+            <div class="controls_color jsColor" style="background-color: #C7D9DD;"></div>
+            <div class="controls_color jsColor" style="background-color: #EEF1DA;"></div>
+            <div class="controls_color jsColor" style="background-color: #F9B2D7;"></div>
+            <div class="controls_color jsColor" style="background-color: #94B4C1;"></div>
+            <div class="controls_color jsColor" style="background-color: #8CA9FF;"></div>
+            <div class="controls_color jsColor" style="background-color: #87BAC3;"></div>
+            <div class="controls_color jsColor" style="background-color: #B4DEBD;"></div>
+            <div class="controls_color jsColor" style="background-color: #91C8E4;"></div>
+            <div class="controls_color jsColor" style="background-color: #AAB99A;"></div>
+            <div class="controls_color jsColor" style="background-color: #85586F;"></div>
+            <div class="controls_color jsColor" style="background-color: #6FE6FC;"></div>
+        
+        </div>
+
+        <div class = "controls_range">
+            <i class = "fa fa-paint-brush"></i>
+            <input type = "range" id = "jsRange" min = "0.1" max="15" value = "2.5" step = "0.1" autocomplete="off"/>
+        </div>
+
+        <div class = "controls_btns">
+            <button id = "jsMode">Fill</button>
+            <button id = "jsSave">Save</button>
+        </div>
+
+        <div class = "restart" id = "ref">
+            <i class = "fa fa-refresh" aria-hidden=""true></i>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
